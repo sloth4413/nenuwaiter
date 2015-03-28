@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.example.nenuwaiter.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include layout="@layout/layout_menu" />
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/layout_title_bar" />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView 
+                android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:gravity="center"
+        		android:text="面值"/>
+            </LinearLayout>
+           	<ListView 
+	        	android:id="@+id/coupon"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+	</com.example.nenuwaiter.SlideMenu> 
+</RelativeLayout>

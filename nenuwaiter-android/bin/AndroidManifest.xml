@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nenuwaiter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.nenuwaiter.Login"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.nenuwaiter.Mainlist"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.example.nenuwaiter.Dishlist"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.example.nenuwaiter.Onedish"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.example.nenuwaiter.Shoplist"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.example.nenuwaiter.Finallist"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.example.nenuwaiter.Search"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.example.nenuwaiter.Coupon"
+            android:windowSoftInputMode="stateHidden"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/slide_info"
+        android:layout_width="240dip"
+        android:layout_height="28.0dip"
+        android:background="#ff313131"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:textColor="#ff959595"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="餐厅列表"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp"
+        android:onClick="jump1" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="购物车"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp"
+        android:onClick="jump2"/>
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="我的订单"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp"
+        android:onClick="jump3" />
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="优惠券"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp"
+        android:onClick="jump4" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+    <LinearLayout
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip" 
+        android:textColor="#ff959595"
+        android:textSize="16.0sp"
+        >
+        <EditText 
+       		android:id="@+id/search"
+       		android:layout_width="0dip"
+       		android:layout_height="wrap_content"
+       		android:layout_weight="3"
+       		/>
+        <Button 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="搜索"
+            android:onClick="search"/>
+        
+    </LinearLayout>
+    <View
+	    android:layout_width="240dip"
+	    android:layout_height="2.0dip"
+	    android:background="@drawable/ic_shelf_category_divider" />
+
+
+</LinearLayout>

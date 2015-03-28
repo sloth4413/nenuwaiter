@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.example.nenuwaiter.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include layout="@layout/layout_menu" />
+            <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/layout_title_bar" />
+            <Button 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下单"
+                android:onClick="onclick"/>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+               <TextView 
+	                android:layout_width="0dip"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="1"
+
+	        		android:text="No."
+                   /> 
+               <TextView 
+	                android:layout_width="0dip"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="3"
+
+	        		android:text="餐点"
+                   /> 
+               <TextView 
+	                android:layout_width="0dip"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="2"
+
+	        		android:text="餐品"
+                   /> 
+               <TextView 
+	                android:layout_width="0dip"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="1"
+
+	        		android:text="价格"
+                   /> 
+               <TextView 
+	                android:layout_width="0dip"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="1"
+
+	        		android:text="数量"
+                   /> 
+               <TextView 
+	                android:layout_width="0dip"
+	        		android:layout_height="wrap_content"
+	        		android:layout_weight="2"
+                   /> 
+            </LinearLayout>
+	        <ListView 
+	        	android:id="@+id/shoplist"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"></ListView>
+	           
+       		</LinearLayout>
+	</com.example.nenuwaiter.SlideMenu>
+
+</RelativeLayout>

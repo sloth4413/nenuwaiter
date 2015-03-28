@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_title_bar" />
+    <ImageView 
+        android:id="@+id/onedish_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/onedish_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	<RatingBar 
+	    android:id="@+id/onedish_rating"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    style="?android:attr/ratingBarStyle"/>
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textSize="20sp"
+	        android:text="订餐数量："/>
+		<EditText 
+		    android:id="@+id/numberpicker1"
+		    android:inputType="number"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="2"/>    
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:onClick="saveSql"
+	        android:text="确定"/>
+	    <Button 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:textColor="#398FAC"
+	        android:text="购物车"
+	        android:onClick="gotoshoplist"/>	    
+	</LinearLayout>
+	<TextView 
+	    android:text="评论:"
+	    android:textSize="25sp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+		<EditText 
+			android:id="@+id/new_comment"
+		    android:layout_width="0dip"
+		    android:layout_height="match_parent"
+		    android:layout_weight="4"
+		    />
+		<Button 
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="确定"
+		    android:onClick="postcomment"/>
+	</LinearLayout>
+	<ListView 
+	    android:id="@+id/commentlist"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"></ListView>
+
+</LinearLayout>
+</ScrollView>
